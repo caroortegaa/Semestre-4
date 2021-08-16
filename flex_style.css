@@ -1,0 +1,59 @@
+.container{
+    border: 1px #aaaaaa solid;
+    margin: 10 px;
+    padding: 10px;
+}
+
+.container div{
+    border: 1px #555555 solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container1{
+    /*intenta acomodar*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container2{
+    /*display: flex;*/
+    align-items: center;
+}
+.container2 #box1{
+    flex: 1;
+    order: 2;
+}
+
+.container2 #box2{
+    flex: 2;
+    order: 3;
+}
+
+.container2 #box3{
+    flex: 1;
+    order: 1;
+}
+/* para todos los que tienen este id específico
+#box1{
+    color: blueviolet;
+}*/
+
+.container3{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container3 #box1, .container3 #box2, .container3 #box3{
+    flex: 0 1 10%;
+    /*flex-grow:0;
+    flex-shrink: 1;
+    flex-basis: 10%; */
+}
+
+.container4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

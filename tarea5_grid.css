@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: darkslategray;
+}
+
+div{
+    border: 1px solid black;
+    /*margin: 1em;*/
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+#layout{
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas: 
+    "one      two      three   four    five      six"
+    "seven    eight    nine    ten     eleven    twelve"
+    "thirteen fourteen fifteen sixteen seventeen eighteen"
+    ;
+
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#one{
+    grid-area:one;
+    background-color: seagreen;
+
+}
+
+#two{
+    grid-area:two;
+    background-color: coral ;
+}
+
+#three{
+    grid-area:three;
+    background-color: lightseagreen;
+}
+
+#four{
+    grid-area:four;
+    background-color: indianred;
+}
+
+#five{
+    grid-area:five;
+    background-color: mediumaquamarine;
+}
+
+#six{
+    grid-area:six;
+    background-color: coral;
+}
+
+#seven{
+    grid-area:seven;
+    background-color: lightsalmon;
+}
+
+#eight{
+    grid-area:eight;
+    background-color: seagreen;
+}
+
+#nine{
+    grid-area:nine;
+    background-color: coral;
+}
+
+#ten{
+    grid-area:ten;
+    background-color: lightseagreen;
+}
+
+#eleven{
+    grid-area:eleven;
+    background-color: lightsalmon;
+}
+
+#twelve{
+    grid-area:twelve;
+    background-color: indianred;
+}
+
+#thirteen{
+    grid-area:thirteen;
+    background-color: seagreen;
+}
+
+#fourteen{
+    grid-area:fourteen;
+    background-color: indianred;
+}
+
+#fifteen{
+    grid-area:fifteen;
+    background-color: mediumaquamarine;
+}
+
+#sixteen{
+    grid-area:sixteen;
+    background-color: coral;
+}
+
+#seventeen{
+    grid-area:seventeen;
+    background-color: seagreen;
+}
+
+#eighteen{
+    grid-area:eighteen;
+    background-color: mediumaquamarine;
+}

@@ -1,0 +1,52 @@
+/*el asterisco es para saleccioar todo o cualquier elemento*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*lograar que el grid abarque el espacio disponible*/
+}
+
+/*para que tengan borde*/
+div{
+    border: 1px solid black;
+    /*em=agarra el tamañño del texto y lo usa para poner separaciones*/
+    /*margin: 1em;*/
+    padding: 1em;
+}
+
+#layout{
+    /*decirle que abarque todo el espacio de la pag*/
+    /*area - viewXheight*/
+    height: 100vh;
+    /*en el momento que pongo esto indico que todos los elementos serán grid elements*/
+    display: grid;
+    /*si dentro de esos divs hubiera más, NO se hacen grid elements*/
+
+    /*definir filas y columnas en el diseño*/
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    /*grid-template-columns: 1fr 3fr 2fr;*/
+    /*divide uniformemente con el espacio disponible las columnas*/
+    /*1fr, 2fr, 3fr, divide el tamaño querido sin descuidar lo demás*/
+    /*grid-template-columns: 200px 1fr 200px;
+    se puede poner % (eje:50%) o fracción*/
+
+    /*espacio entre filas y columnas*/
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/*grid track son las lineas que separan los elementos del grid*/
+#two{
+    /*indicar desde donde empieza y donde termina (es lo que se ve en chrome)*/
+    grid-column: 2/-1;
+}
+
+#three{
+    grid-row: 2/5;
+}
+
+#five{
+    grid-column: 3/4;
+    grid-row: 2/6;
+}

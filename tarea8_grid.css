@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: darkslategray;
+}
+
+div{
+    border: 1px solid black;
+    /*margin: 1em;*/
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+#layout{
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas: 
+    "one      two   three four  five"
+    "six    seven   eight eight eight"
+    "nine   nine    nine  nine  nine"
+    ;
+
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#one{
+    grid-area:one;
+    background-color: indianred;
+}
+
+#two{
+    grid-area:two;
+    background-color: lightsalmon;
+}
+
+#three{
+    grid-area:three;
+    background-color: mediumaquamarine;
+}
+
+#four{
+    grid-area:four;
+    background-color: lightseagreen;
+}
+
+#five{
+    grid-area:five;
+    background-color: seagreen;
+}
+
+#six{
+    grid-area:six;
+    background-color: lightsalmon;
+}
+
+#seven{
+    grid-area:seven;
+    background-color: indianred;
+}
+
+#eight{
+    grid-area:eight;
+    background-color: coral;
+}
+
+#nine{
+    grid-area:nine;
+    background-color: mediumaquamarine;
+}
